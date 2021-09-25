@@ -1,0 +1,16 @@
+[Unit]
+Description=Cloud9 Service
+After=syslog.target
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/workspace
+Environment="TERM=xterm"
+ExecStart=/usr/bin/node /home/pi/workspace/RaspberryPi-Cloud9/core/server.js -p 8000 -a pi:raspberry -w /home/pi/workspace -l 0.0.0.0
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
