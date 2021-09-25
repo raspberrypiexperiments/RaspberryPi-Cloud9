@@ -12,6 +12,8 @@ This repository includes instllation procedures for Cloud9 service.
 ## Installation procedure
 
 '''bash
+mkdir workspace
+cd workspace
 git clone --recurse-submodules https://github.com/raspberrypiexperiments/RaspberryPi-Cloud9.git
 cd RaspberryPi-Cloud9
 make install
@@ -35,4 +37,4 @@ rm -rf RaspberryPi-Cloud9
 
 MIT License
 
-Copyright (c) 2021 Marcin Sielski marcin.sielski@gmail.com
+Copyright (c) 2021 Marcin Sielski <marcin.sielski@gmail.com>
