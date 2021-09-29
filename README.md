@@ -2,7 +2,7 @@
 
 This repository includes instllation procedures for Cloud9 service.
 
-## Known supported RaspberryPi
+## Known supported Raspberry Pi
 
 * Raspberry Pi Zero,
 * Raspberry Pi Zero W,
@@ -11,27 +11,29 @@ This repository includes instllation procedures for Cloud9 service.
 
 ## Installation procedure
 
-'''bash
+```bash
 mkdir workspace
 cd workspace
 git clone --recurse-submodules https://github.com/raspberrypiexperiments/RaspberryPi-Cloud9.git
 cd RaspberryPi-Cloud9
 make install
-'''
+```
 
 ## Launch procedure
 
 Open in the browser following address http://<ip_address>:8000.
+
 Login: pi
+
 Password: raspberry
 
 ## Uninstallation procedure
 
-'''bash
+```bash
 make uninstall
 cd ..
 rm -rf RaspberryPi-Cloud9
-'''
+```
 
 ## License
 
