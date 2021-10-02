@@ -32,7 +32,7 @@ Password: raspberry
 ```bash
 make uninstall
 cd ..
-rm -rf RaspberryPi-Cloud9
+sudo rm -rf RaspberryPi-Cloud9
 ```
 
 ## License
