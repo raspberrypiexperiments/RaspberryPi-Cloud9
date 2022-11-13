@@ -39,4 +39,4 @@ sudo rm -rf RaspberryPi-Cloud9
 
 MIT License
 
-Copyright (c) 2021 Marcin Sielski <marcin.sielski@gmail.com>
+Copyright (c) 2021-2022 Marcin Sielski <marcin.sielski@gmail.com>
