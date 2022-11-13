@@ -14,7 +14,7 @@ This repository includes instllation procedures for Cloud9 service.
 ```bash
 mkdir workspace
 cd workspace
-git clone --recurse-submodules https://github.com/raspberrypiexperiments/RaspberryPi-Cloud9.git
+git clone --recurse-submodules -j$(nproc) https://github.com/raspberrypiexperiments/RaspberryPi-Cloud9.git
 cd RaspberryPi-Cloud9
 make install
 ```
