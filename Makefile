@@ -25,7 +25,7 @@ dependencies:
 	sudo apt upgrade -y
 
 install: dependencies
-	cd core && scripts/install-sdk.sh
+	export PATH=~/.c9/node/bin:$$PATH && cd core && scripts/install-sdk.sh
 	sudo cp cloud9.service /etc/systemd/system
 	sudo systemctl enable cloud9.service
 	sudo systemctl start cloud9.service
