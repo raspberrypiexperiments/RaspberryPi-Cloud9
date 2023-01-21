@@ -7,15 +7,29 @@ This repository includes instllation procedures for Cloud9 service.
 * Raspberry Pi Zero,
 * Raspberry Pi Zero W,
 * Rapsberry Pi 3B,
+* Rapsberry Pi 3A+,
 * Rapsberry Pi 4B.
+
+## Known supported OS
+
+* Buster,
+* Bullseye.
 
 ## Installation procedure
 
 ```bash
 mkdir workspace
+```
+```bash
 cd workspace
+```
+```bash
 git clone --recurse-submodules -j$(nproc) https://github.com/raspberrypiexperiments/RaspberryPi-Cloud9.git
+```
+```bash
 cd RaspberryPi-Cloud9
+```
+```bash
 make install
 ```
 
@@ -31,7 +45,11 @@ Password: raspberry
 
 ```bash
 make uninstall
+```
+```bash
 cd ..
+```
+```bash
 sudo rm -rf RaspberryPi-Cloud9
 ```
 
@@ -39,4 +57,4 @@ sudo rm -rf RaspberryPi-Cloud9
 
 MIT License
 
-Copyright (c) 2021-2022 Marcin Sielski <marcin.sielski@gmail.com>
+Copyright (c) 2021-2023 Marcin Sielski <marcin.sielski@gmail.com>

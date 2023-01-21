@@ -1,6 +1,6 @@
 # MIT License
 #
-# Copyright (c) 2021-2022 Marcin Sielski <marcin.sielski@gmail.com>
+# Copyright (c) 2021-2023 Marcin Sielski <marcin.sielski@gmail.com>
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -23,9 +23,14 @@
 dependencies:
 	sudo apt update
 	sudo apt upgrade -y
+	sudo apt install python2.7 -y
 
 install: dependencies
+	sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 0
+	sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+	sudo update-alternatives --config python
 	export PATH=~/.c9/node/bin:$$PATH && cd core && scripts/install-sdk.sh
+	sudo update-alternatives --config python
 	sudo cp cloud9.service /etc/systemd/system
 	sudo systemctl enable cloud9.service
 	sudo systemctl start cloud9.service
